@@ -32,6 +32,7 @@ c.retrieve(
         'grid': '1.0/1.0',
         'product_type':'reanalysis',
         'year':'1979',
+        'day':['01'],
         'month':'01',
         'format':'netcdf'
     },
