@@ -55,17 +55,8 @@ def download_era5_data(year, month, variable_name, client):
                 '925', '950', '975',
                 '1000'
             ],
-            'variable': [
-                'geopotential',
-                'temperature',
-                'u_component_of_wind',
-                'v_component_of_wind',
-                'vertical_velocity'
-            ],
-            'time': [
-                '00: 00', '06: 00', '12: 00',
-                '18: 00'
-            ],
+            'variable': [variable_name],
+            'time': ['00: 00', '06: 00', '12: 00', '18: 00'],
             'grid': '1.0/1.0',
             'product_type': 'reanalysis',
             'year': '{}'.format(year),
@@ -84,4 +75,5 @@ if __name__ == "__main__":
 
     fname = download_era5_data(2000, 2, 'geopotential', cdsapi_client)
     print('Trial finished.')
+
 
