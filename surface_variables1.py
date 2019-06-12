@@ -5,16 +5,15 @@ from calendar import monthrange
 
 # === Define download task ===
 short_names = {
-    'geopotential':  'z',
-    'temperature':  't',
-    'u_component_of_wind':  'u',
-    'v_component_of_wind':  'v',
-    'vertical_velocity':  'w'
+    'instantaneous_surface_sensible_heat_flux': 'z',
+    'land_sea_mask': 't',
+    'sea_surface_temperature': 'u',
+    'surface_pressure': 'v'
 }
+n_processors = len(list(short_names))
 
 # === Create connection client ===
 cdsapi_client = cdsapi.Client()
-
 
 # === Define task ===
 def download_era5_data(year, month, variable_name, client):
@@ -76,7 +75,7 @@ if __name__ == "__main__":
     parallel_process(
         array=list(short_names),
         function=loop_over_months_and_years,
-        n_jobs=5,
+        n_jobs=n_processors,
         use_kwargs=False,
         extra_kwargs={
             'start_year': 1979,
