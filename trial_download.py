@@ -11,6 +11,7 @@ short_names = {
     'v_component_of_wind':  'v',
     'vertical_velocity':  'w'
 }
+n_processors = len(list(short_names))
 
 # === Create connection client ===
 cdsapi_client = cdsapi.Client()
@@ -76,7 +77,7 @@ if __name__ == "__main__":
     parallel_process(
         array=list(short_names),
         function=loop_over_months_and_years,
-        n_jobs=5,
+        n_jobs=n_processors,
         use_kwargs=False,
         extra_kwargs={
             'start_year': 1979,

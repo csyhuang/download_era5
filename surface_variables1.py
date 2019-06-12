@@ -5,10 +5,10 @@ from calendar import monthrange
 
 # === Define download task ===
 short_names = {
-    'instantaneous_surface_sensible_heat_flux': 'z',
-    'land_sea_mask': 't',
-    'sea_surface_temperature': 'u',
-    'surface_pressure': 'v'
+    'instantaneous_surface_sensible_heat_flux': 'isshf',
+    'land_sea_mask': 'lsmask',
+    'sea_surface_temperature': 'sst',
+    'surface_pressure': 'ps'
 }
 n_processors = len(list(short_names))
 
