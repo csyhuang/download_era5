@@ -29,7 +29,7 @@ def download_era5_data(year, month, variable_name, client):
     print('year = {}; month = {}'.format(year, month))
 
     client.retrieve(
-        'reanalysis-era5-pressure-levels',
+        'reanalysis-era5-single-levels',
         {
             'variable': [variable_name],
             'time': ['00:00', '06:00', '12:00', '18:00'],
