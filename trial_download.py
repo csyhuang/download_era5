@@ -28,7 +28,7 @@ cdsapi_client = cdsapi.Client()
 def download_era5_data(year, month, variable_name, client):
 
     filename = \
-        '{}_{: 02d}_{}.nc'.format(year, month, short_name[variable_name])
+        '{}_{:02d}_{}.nc'.format(year, month, short_name[variable_name])
 
     print('Start downloading {}'.format(filename))
 
@@ -56,7 +56,7 @@ def download_era5_data(year, month, variable_name, client):
                 '1000'
             ],
             'variable': [variable_name],
-            'time': ['00: 00', '06: 00', '12: 00', '18: 00'],
+            'time': ['00:00', '06:00', '12:00', '18:00'],
             'grid': '1.0/1.0',
             'product_type': 'reanalysis',
             'year': '{}'.format(year),
@@ -66,14 +66,33 @@ def download_era5_data(year, month, variable_name, client):
         },
         filename
     )
-
     print('Finished downloading {}'.format(filename))
-
     return filename
+
+
+def loop_over_months_and_years(variable_name, start_year, end_year, client):
+
+    for year in range(start_year, end_year+1):
+        for month in range(1, 12+1):
+            fname = download_era5_data(year, month, variable_name, client)
+
+    return 'Finished downloading {}'.format(variable_name)
+
 
 if __name__ == "__main__":
 
-    fname = download_era5_data(2000, 2, 'geopotential', cdsapi_client)
-    print('Trial finished.')
+    parallel_process(
+        array=variables_to_download,
+        function=loop_over_months_and_years,
+        n_jobs=5,
+        use_kwargs=False,
+        extra_kwargs={
+            'start_year': 1979,
+            'end_year': 1981,
+            'client': cdsapi_client
+        }
+    )
+
+    print('End job: start_year = 1979; end_year = 1981.')
 
 
