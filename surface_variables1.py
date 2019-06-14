@@ -3,6 +3,10 @@ import cdsapi
 from parallel import parallel_process
 from calendar import monthrange
 
+# === Years of data to download ===
+start_year = 1982
+end_year = 2019
+
 # === Define download task ===
 short_names = {
     'instantaneous_surface_sensible_heat_flux': 'isshf',
@@ -63,8 +67,8 @@ if __name__ == "__main__":
         n_jobs=n_processors,
         use_kwargs=False,
         extra_kwargs={
-            'start_year': 1979,
-            'end_year': 1981,
+            'start_year': start_year,
+            'end_year': end_year,
             'client': cdsapi_client
         }
     )
