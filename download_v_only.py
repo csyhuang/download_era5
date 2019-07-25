@@ -78,18 +78,10 @@ def loop_over_months_and_years(variable_name, start_year, end_year, client):
 
 if __name__ == "__main__":
 
-    parallel_process(
-        array=list(short_names),
-        function=loop_over_months_and_years,
-        n_jobs=n_processors,
-        use_kwargs=False,
-        extra_kwargs={
-            'start_year': start_year,
-            'end_year': end_year,
-            'client': cdsapi_client
-        }
+    loop_over_months_and_years(
+        variable_name='v_component_of_wind',
+        start_year=start_year,
+        end_year=end_year,
+        client=cdsapi_client
     )
-
-    print('End job: start_year = 1979; end_year = 1981.')
-
 
