@@ -1,0 +1,17 @@
+count|name|units|shortName|paramId|an|fc
+1|Specific rain water content|kg kg**-1|crwc|75|x|x
+2|Specific snow water content|kg kg**-1|cswc|76|x|x
+3|Eta-coordinate vertical velocity|s**-1|etadot|77|x|x
+4|Geopotential*|m**2 s**-2|z|129|x|x
+5|Temperature|K|t|130|x|x
+6|U component of wind|m s**-1|u|131|x|x
+7|V component of wind|m s**-1|v|132|x|x
+8|Specific humidity|kg kg**-1|q|133|x|x
+9|Vertical velocity|Pa s**-1|w|135|x|x
+10|Vorticity (relative)|s**-1|vo|138|x|x
+11|Logarithm of surface pressure*|~|lnsp|152|x|x
+12|Divergence|s**-1|d|155|x|x
+13|Ozone mass mixing ratio|kg kg**-1|o3|203|x|x
+14|Specific cloud liquid water content|kg kg**-1|clwc|246|x|x
+15|Specific cloud ice water content|kg kg**-1|ciwc|247|x|x
+16|Fraction of cloud cover|(0 - 1)|cc|248|x|x

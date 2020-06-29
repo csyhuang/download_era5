@@ -1,0 +1,14 @@
+count|name|units|shortName|paramId|an|fc
+2|Mean temperature tendency due to long-wave radiation|K s**-1|mttlwr|235002||x
+3|Mean temperature tendency due to short-wave radiation, clear sky|K s**-1|mttswrcs|235003||x
+4|Mean temperature tendency due to long-wave radiation, clear sky|K s**-1|mttlwrcs|235004||x
+5|Mean temperature tendency due to parametrisations|K s**-1|mttpm|235005||x
+6|Mean specific humidity tendency due to parametrisations|kg kg**-1 s**-1|mqtpm|235006||x
+7|Mean eastward wind tendency due to parametrisations|m s**-2|mutpm|235007||x
+8|Mean northward wind tendency due to parametrisations|m s**-2|mvtpm|235008||x
+9|Mean updraught mass flux*|kg m**-2 s**-1|mumf|235009||x
+10|Mean downdraught mass flux*|kg m**-2 s**-1|mdmf|235010||x
+11|Mean updraught detrainment rate|kg m**-3 s**-1|mudr|235011||x
+12|Mean downdraught detrainment rate|kg m**-3 s**-1|mddr|235012||x
+13|Mean total precipitation flux*|kg m**-2 s**-1|mtpf|235013||x
+14|Mean turbulent diffusion coefficient for heat*|m**2 s**-1|mtdch|235014||x

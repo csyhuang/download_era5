@@ -1,0 +1,8 @@
+count|name|units|shortName|paramId|an|fc
+1|Potential temperature|K|pt|3|x|
+2|Pressure|Pa|pres|54|x|
+3|Geopotential|m**2 s**-2|z|129|x|
+4|U component of wind|m s**-1|u|131|x|
+5|V component of wind|m s**-1|v|132|x|
+6|Specific humidity|kg kg**-1|q|133|x|
+7|Ozone mass mixing ratio|kg kg**-1|o3|203|x|

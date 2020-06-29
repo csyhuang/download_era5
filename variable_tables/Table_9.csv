@@ -1,0 +1,17 @@
+count|name|units|Variable name in CDS|shortName|paramId|an|fc
+1|Potential vorticity|K m**2 kg**-1 s**-1|potential_vorticity|pv|60|x|x
+2|Specific rain water content|kg kg**-1|specific_rain_water_content|crwc|75|x|x
+3|Specific snow water content|kg kg**-1|specific_snow_water_content|cswc|76|x|x
+4|Geopotential|m**2 s**-2|geopotential|z|129|x|x
+5|Temperature|K|temperature|t|130|x|x
+6|U component of wind|m s**-1|u_component_of_wind|u|131|x|x
+7|V component of wind|m s**-1|v_component_of_wind|v|132|x|x
+8|Specific humidity|kg kg**-1|specific_humidity|q|133|x|x
+9|Vertical velocity|Pa s**-1|vertical_velocity|w|135|x|x
+10|Vorticity (relative)|s**-1|vorticity|vo|138|x|x
+11|Divergence|s**-1|divergence|d|155|x|x
+12|Relative humidity|%|relative_humidity|r|157|x|x
+13|Ozone mass mixing ratio|kg kg**-1|ozone_mass_mixing_ratio|o3|203|x|x
+14|Specific cloud liquid water content|kg kg**-1|specific_cloud_liquid_water_content|clwc|246|x|x
+15|Specific cloud ice water content|kg kg**-1|specific_cloud_ice_water_content|ciwc|247|x|x
+16|Fraction of cloud cover|(0 - 1)|fraction_of_cloud_cover|cc|248|x|x

@@ -1,0 +1,17 @@
+count|name|units|Variable name in CDS|shortName|paramId|an|fc
+1|UV visible albedo for direct radiation|(0 - 1)|uv_visible_albedo_for_direct_radiation|aluvp|15|x|no mean
+2|UV visible albedo for diffuse radiation|(0 - 1)|uv_visible_albedo_for_diffuse_radiation|aluvd|16|x|no mean
+3|Near IR albedo for direct radiation|(0 - 1)|near_ir_albedo_for_direct_radiation|alnip|17|x|no mean
+4|Near IR albedo for diffuse radiation|(0 - 1)|near_ir_albedo_for_diffuse_radiation|alnid|18|x|no mean
+5|Magnitude of turbulent surface stress|N m**-2 s||magss|48||x
+6|Mean magnitude of turbulent surface stress|N m**-2||mmtss|235025||x
+7|10 metre wind gust since previous post-processing|m s**-1|10m_wind_gust_since_previous_post_processing|10fg|49||no mean
+8|Maximum temperature at 2 metres since previous post-processing|K|maximum_2m_temperature_since_previous_post_processing|mx2t|201||no mean
+9|Minimum temperature at 2 metres since previous post-processing|K|minimum_2m_temperature_since_previous_post_processing|mn2t|202||no mean
+10|10 metre wind speed|m s**-1||10si|207|x|x
+11|Maximum total precipitation rate since previous post-processing|kg m**-2 s**-1|maximum_total_precipitation_rate_since_previous_post_processing|mxtpr|228226||no mean
+12|Minimum total precipitation rate since previous post-processing|kg m**-2 s**-1|minimum_total_precipitation_rate_since_previous_post_processing|mntpr|228227||no mean
+13|Altimeter wave height|m|altimeter_wave_height|awh|140246|no mean|
+14|Altimeter corrected wave height|m|altimeter_corrected_wave_height|acwh|140247|no mean|
+15|Altimeter range relative correction|~|altimeter_range_relative_correction|arrc|140248|no mean|
+16|2D wave spectra (single)|m**2 s radian**-1||2dfd|140251|no mean|

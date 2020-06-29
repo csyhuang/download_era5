@@ -1,0 +1,10 @@
+count|name|units|shortName|paramId|an|fc
+1|Montgomery potential|m**2 s**-2|mont|53|x|
+2|Pressure|Pa|pres|54|x|
+3|Potential vorticity|K m**2 kg**-1 s**-1|pv|60|x|
+4|U component of wind|m s**-1|u|131|x|
+5|V component of wind|m s**-1|v|132|x|
+6|Specific humidity|kg kg**-1|q|133|x|
+7|Vorticity (relative)|s**-1|vo|138|x|
+8|Divergence|s**-1|d|155|x|
+9|Ozone mass mixing ratio|kg kg**-1|o3|203|x|

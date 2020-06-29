@@ -1,0 +1,51 @@
+count|name|units|Variable name in CDS|shortName|paramId|an|fc
+1|Significant wave height of first swell partition|m|significant_wave_height_of_first_swell_partition|swh1|140121|x|x
+2|Mean wave direction of first swell partition|degrees|mean_wave_direction_of_first_swell_partition|mwd1|140122|x|x
+3|Mean wave period of first swell partition|s|mean_wave_period_of_first_swell_partition|mwp1|140123|x|x
+4|Significant wave height of second swell partition|m|significant_wave_height_of_second_swell_partition|swh2|140124|x|x
+5|Mean wave direction of second swell partition|degrees|mean_wave_period_of_second_swell_partition|mwd2|140125|x|x
+6|Mean wave period of second swell partition|s|mean_wave_period_of_second_swell_partition|mwp2|140126|x|x
+7|Significant wave height of third swell partition|m|significant_wave_height_of_third_swell_partition|swh3|140127|x|x
+8|Mean wave direction of third swell partition|degrees|mean_wave_direction_of_third_swell_partition|mwd3|140128|x|x
+9|Mean wave period of third swell partition|s|mean_wave_period_of_third_swell_partition|mwp3|140129|x|x
+10|Wave Spectral Skewness|dimensionless|wave_spectral_skewness|wss|140207|x|x
+11|Free convective velocity over the oceans|m s**-1|free_convective_velocity_over_the_oceans|wstar|140208|x|x
+12|Air density over the oceans|kg m**-3|air_density_over_the_oceans|rhoao|140209|x|x
+13|Normalized energy flux into waves|dimensionless|normalized_energy_flux_into_waves|phiaw|140211|x|x
+14|Normalized energy flux into ocean|dimensionless|normalized_energy_flux_into_ocean|phioc|140212|x|x
+15|Normalized stress into ocean|dimensionless|normalized_stress_into_ocean|tauoc|140214|x|x
+16|U-component stokes drift|m s**-1|u_component_stokes_drift|ust|140215|x|x
+17|V-component stokes drift|m s**-1|v_component_stokes_drift|vst|140216|x|x
+18|Period corresponding to maximum individual wave height|s|period_corresponding_to_maximum_individual_wave_height|tmax|140217|x|x
+19|Maximum individual wave height|m|maximum_individual_wave_height|hmax|140218|x|x
+20|Model bathymetry|m|model_bathymetry|wmb|140219|x|x
+21|Mean wave period based on first moment|s|mean_wave_period_based_on_first_moment|mp1|140220|x|x
+22|Mean zero-crossing wave period|s|mean_zero_crossing_wave_period|mp2|140221|x|x
+23|Wave spectral directional width|dimensionless|wave_spectral_directional_width|wdw|140222|x|x
+24|Mean wave period based on first moment for wind waves|s|mean_wave_period_based_on_first_moment_for_wind_waves|p1ww|140223|x|x
+25|Mean wave period based on second moment for wind waves|s|mean_wave_period_based_on_second_moment_for_wind_waves|p2ww|140224|x|x
+26|Wave spectral directional width for wind waves|dimensionless|wave_spectral_directional_width_for_wind_waves|dwww|140225|x|x
+27|Mean wave period based on first moment for swell|s|mean_wave_period_based_on_first_moment_for_swell|p1ps|140226|x|x
+28|Mean wave period based on second moment for swell|s|mean_wave_period_based_on_second_moment_for_wind_waves|p2ps|140227|x|x
+29|Wave spectral directional width for swell|dimensionless|wave_spectral_directional_width_for_swell|dwps|140228|x|x
+30|Significant height of combined wind waves and swell|m|significant_height_of_combined_wind_waves_and_swell|swh|140229|x|x
+31|Mean wave direction|degrees|mean_wave_direction|mwd|140230|x|x
+32|Peak wave period|s|peak_wave_period|pp1d|140231|x|x
+33|Mean wave period|s|mean_wave_period|mwp|140232|x|x
+34|Coefficient of drag with waves|dimensionless|coefficient_of_drag_with_waves|cdww|140233|x|x
+35|Significant height of wind waves|m|significant_height_of_wind_waves|shww|140234|x|x
+36|Mean direction of wind waves|degrees|mean_direction_of_wind_waves|mdww|140235|x|x
+37|Mean period of wind waves|s|mean_period_of_wind_waves|mpww|140236|x|x
+38|Significant height of total swell|m|significant_height_of_total_swell|shts|140237|x|x
+39|Mean direction of total swell|degrees|mean_direction_of_total_swell|mdts|140238|x|x
+40|Mean period of total swell|s|mean_period_of_total_swell|mpts|140239|x|x
+41|Mean square slope of waves|dimensionless|mean_square_slope_of_waves|msqs|140244|x|x
+42| 10 metre wind speedThis 10m wind parameter is the wind speed that has been used by the wave model, which is coupled to the atmospheric model.For this reason: it is archived on the wave model's native grid, with the same land-sea mask as that model. Therefore, this parameter is not defined over land and wherever else the wave model is not defined, where it is encoded as missing data. Improper decoding of the missing value usually results in very large values being given for these land points.the wave model resets all values below 2 m/s to 2m/s. The reason for this is that as the winds become weak, the long waves (swell) try to drive the wind from below but this is not modelled in the IFS, as it assumes that the wind profile should be logarithmic (+- stability correction). To account for this effect, the whole of the boundary layer scheme would need to be revised. A simple trick to avoid the problem is to boost the weak winds to 2m/s, which is outside the range where the waves can potentially drive the wind.this parameter is actually the 10m neutral wind speed as determined from the atmospheric surface stress (see documentation on Ocean Wave model output parameters). If wave altimeter data were assimilated, the analysis of this parameter also contains wind speed updates that come directly out of the wave height updates.This parameter should not be used for looking at the quality of reanalysis surface wind - the u and v components of the 10m wind (atmospheric parameters 165 and 166) should be used instead.|m s**-1|ocean_surface_stress_equivalent_10m_neutral_wind_speed|wind|140245|x|x
+43|Altimeter wave height|m|altimeter_wave_height|awh|140246|x|
+44|Altimeter corrected wave height|m|altimeter_corrected_wave_height|acwh|140247|x|
+45|Altimeter range relative correction|~|altimeter_range_relative_correction|arrc|140248|x|
+46|10 metre wind direction|degrees|ocean_surface_stress_equivalent_10m_neutral_wind_direction|dwi|140249|x|x
+47|Wave spectral kurtosis|dimensionless|wave_spectral_kurtosis|wsk|140252|x|x
+48|Benjamin-Feir index|dimensionless|benjamin_feir_index|bfi|140253|x|x
+49|Wave spectral peakedness|dimensionless|wave_spectral_peakedness|wsp|140254|x|x
+50|2D wave spectra (single)|m**2 s radian**-1||2dfd|140251*|x|
