@@ -1,0 +1,18 @@
+{
+  "divergence": "d",
+  "fraction_of_cloud_cover": "cc",
+  "geopotential": "z",
+  "ozone_mass_mixing_ratio": "o3",
+  "potential_vorticity": "pv",
+  "relative_humidity": "r",
+  "specific_cloud_ice_water_content": "ciwc",
+  "specific_cloud_liquid_water_content": "clwc",
+  "specific_humidity": "q",
+  "specific_rain_water_content": "crwc",
+  "specific_snow_water_content": "cswc",
+  "temperature": "t",
+  "u_component_of_wind": "u",
+  "v_component_of_wind": "v",
+  "vertical_velocity": "w",
+  "vorticity": "vo"
+}

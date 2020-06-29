@@ -11,9 +11,11 @@
         "vertical_velocity"
     ],
     "reanalysis-era5-single-levels": [
-        "instantaneous_surface_sensible_heat_flux",
         "land_sea_mask",
+        "surface_pressure",
         "sea_surface_temperature",
-        "surface_pressure"
+        "instantaneous_surface_sensible_heat_flux",
+        "convective_precipitation",
+        "large_scale_precipitation"
     ]
 }

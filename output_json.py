@@ -24,7 +24,7 @@ sample_dictionary = {
     ],
 }
 
-with open("config.yaml") as f:
+with open("task_definition.yaml") as f:
     text = f.read()
     dd = json.loads(text)
     # pprint(dd)
@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
     # ['count', 'name', 'units', 'Variable name in CDS', 'shortName', 'paramId', 'an', 'fc']
     # df = pd.read_csv("Table_9.csv", delimiter="|")
-    df = pd.concat([pd.read_csv(f"Table_{i}.csv", delimiter="|") for i in range(1, 7)])
+    df = pd.concat([pd.read_csv(f"variable_tables/Table_{i}.csv", delimiter="|") for i in [1, 2, 3, 4, 5, 6, 8]])
 
     valid_dict = {}
     for index, row in df.iterrows():
