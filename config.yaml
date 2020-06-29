@@ -1,0 +1,19 @@
+{
+    "start_year_month": "201912",
+    "end_year_month": "202001",
+    "grid_resolution": "1.0/1.0",
+    "time_in_a_day": ["00:00", "06:00", "12:00", "18:00"],
+    "reanalysis-era5-pressure-levels": [
+        "geopotential",
+        "temperature",
+        "u_component_of_wind",
+        "v_component_of_wind",
+        "vertical_velocity"
+    ],
+    "reanalysis-era5-single-levels": [
+        "instantaneous_surface_sensible_heat_flux",
+        "land_sea_mask",
+        "sea_surface_temperature",
+        "surface_pressure"
+    ]
+}

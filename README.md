@@ -1,5 +1,13 @@
 # Download ERA5 data to Winds
 
+## Python environment to run the scripts
+```bash
+pip install cdsapi
+conda install -c anaconda lxml
+conda install -c anaconda pandas
+```
+
+## Data to be downloaded
 Type: pressure level analysis  
 Resolution:, 1 degree x 1 degree, 6 hourly data  
 Variables:  
